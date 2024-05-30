@@ -79,4 +79,10 @@
 		<PackageReference Include="syncfusion.maui.tabview" Version="25.2.6" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="View\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

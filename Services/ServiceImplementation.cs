@@ -1,5 +1,4 @@
-﻿using Android.App;
-using Android.Views;
+﻿
 using ExpTracApp.Model;
 using SQLite;
 using System;

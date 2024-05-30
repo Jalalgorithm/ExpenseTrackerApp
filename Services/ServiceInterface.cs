@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExpTracApp.Services
 {
-    internal interface ServiceInterface
+    public interface ServiceInterface
     {
         //Expenses
         Task<(bool flag, string message, Expenses? newData)> AddorUpdateExpensesAsync(Expenses model);
