@@ -1,5 +1,8 @@
 ﻿using CommunityToolkit.Maui;
+using ExpTracApp.Model;
 using ExpTracApp.Services;
+using ExpTracApp.View;
+using ExpTracApp.ViewModel;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 
@@ -20,6 +23,11 @@ namespace ExpTracApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
             builder.Services.AddSingleton<ServiceInterface, ServiceImplementation>();
+            builder.Services.AddScoped<HomePageViewModel>();
+            builder.Services.AddScoped<HomePage>();
+            
+            builder.Services.AddScoped<ManageExpensesPageViewModel>();
+            builder.Services.AddScoped<ManageExpensesPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
