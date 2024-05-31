@@ -67,6 +67,8 @@ namespace ExpTracApp.ViewModel
         [ObservableProperty]
         private bool showMessagePopup;
 
+
+        [RelayCommand]
         public void CloseMessagePopup()
         {
             ShowPopup = true;

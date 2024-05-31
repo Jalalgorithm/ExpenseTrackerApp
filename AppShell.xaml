@@ -3,13 +3,17 @@
     x:Class="ExpTracApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ExpTracApp"
+    xmlns:local="clr-namespace:ExpTracApp.View"
     Shell.FlyoutBehavior="Disabled"
     Title="ExpTracApp">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Home">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Manage Expenses">
+        <ShellContent ContentTemplate="{DataTemplate local:ManageExpensesPage}"/>
+    </FlyoutItem>
+
 
 </Shell>
