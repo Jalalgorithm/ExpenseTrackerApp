@@ -57,6 +57,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\open-iconic.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="communitytoolkit.maui" Version="9.0.0" />
 		<PackageReference Include="communitytoolkit.mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.40" />
