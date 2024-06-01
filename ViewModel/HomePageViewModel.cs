@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using ExpTracApp.Model;
 using ExpTracApp.Services;
-
+using ExpTracApp.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -242,6 +242,12 @@ namespace ExpTracApp.ViewModel
             {
                 YesterdayProgress = LastWeekExpenses / ThisMonthExpenses * 100;
             }
+        }
+
+        [RelayCommand]
+        private async Task GotoAddExpensePage()
+        {
+            await Shell.Current.GoToAsync($"{nameof(ManageExpensesPage)}?id=1");
         }
 
 

@@ -46,7 +46,7 @@ namespace ExpTracApp.ViewModel
         [ObservableProperty]
         private DateTime? selectedDate;
 
-        private void OnSelectedDateChanged (DateTime? oldValue , DateTime? newValue)
+        private void OnPickedDateChanged (DateTime? oldValue , DateTime? newValue)
         {
             if (newValue is null)
                 SelectedDate = newValue;
