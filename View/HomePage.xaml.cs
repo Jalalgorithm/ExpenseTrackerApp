@@ -1,4 +1,5 @@
 using ExpTracApp.ViewModel;
+using System.Diagnostics;
 
 namespace ExpTracApp.View;
 
@@ -8,14 +9,31 @@ public partial class HomePage : ContentPage
 
     public HomePage(HomePageViewModel homePageViewModel)
 	{
-		InitializeComponent();
-        _homePageViewModel = homePageViewModel;
-        BindingContext = homePageViewModel;
+        try
+        {
+            InitializeComponent();
+            _homePageViewModel = homePageViewModel;
+            BindingContext = homePageViewModel;
+
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Exception during initialization: {ex.Message}");
+        }
+		
 
     }
     protected override void OnAppearing()
     {
-        _homePageViewModel.PopulateDataCommand.Execute(this);
+        try
+        {
+            _homePageViewModel.PopulateDataCommand.Execute(this);
+
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine($"Exception in OnAppearing: {ex.Message}");
+        }
     }
 
 
