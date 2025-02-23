@@ -62,6 +62,6 @@ This project is licensed under the **MIT License**.
 
 ## Contact
 For questions or feedback, reach out via:
-- Email: your-email@example.com
-- GitHub Issues: [https://github.com/yourusername/ExpenseTrackerApp/issues](https://github.com/yourusername/ExpenseTrackerApp/issues)
+- Email: temitomzi@gmail.com
+- GitHub Issues: [https://github.com/yourusername/ExpenseTrackerApp/issues](https://github.com/jalalgorithm/ExpenseTrackerApp/issues)
 
