@@ -28,7 +28,7 @@ The **Expense Tracker App** is a mobile and desktop application developed using 
 ### Steps to Run
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/ExpenseTrackerApp.git
+   git clone https://github.com/jalalgorithm/ExpenseTrackerApp.git
    cd ExpenseTrackerApp
    ```
 2. Open the project in **Visual Studio 2022**.
